@@ -1,25 +1,21 @@
-﻿using System;
-using System.Security.Cryptography;
-using EL.Crypto.Hashing;
+﻿using EL.Crypto.Hashing;
 
 namespace EL.Crypto.Generators
 {
     public class TokenGenerator : ITokenGenerator
     {
-        private static readonly RNGCryptoServiceProvider byteGenerator = new RNGCryptoServiceProvider();
+        private readonly IByteGenerator byteGenerator;
         private readonly IHasher hasher;
 
-        public TokenGenerator(IHasher hasher)
+        public TokenGenerator(IByteGenerator byteGenerator, IHasher hasher)
         {
+            this.byteGenerator = byteGenerator;
             this.hasher = hasher;
         }
 
         public Token Generate()
         {
-            var bytes = new byte[64];
-            byteGenerator.GetBytes(bytes);
-            var token = Convert.ToBase64String(bytes);
-            return Regenerate(token);
+            return Regenerate(byteGenerator.GenerateAsBase64(64));
         }
 
         public Token Regenerate(string tokenValue)

@@ -1,5 +1,4 @@
-﻿using System;
-using EL.Crypto.Generators;
+﻿using EL.Crypto.Generators;
 using EL.Crypto.Hashing;
 using NUnit.Framework;
 
@@ -10,22 +9,15 @@ namespace EL.Crypto.UnitTests.Generators
         [Test]
         public void When_generating_a_new_token()
         {
+            var value = "token value";
             var hash = "this is the hash";
+            GetMock<IByteGenerator>().Setup(x => x.GenerateAsBase64(64)).Returns(value);
             GetMock<IHasher>().Setup(x => x.Hash(IsAny<string>())).Returns(hash);
 
             var result = ClassUnderTest.Generate();
 
-            Assert.That(Convert.FromBase64String(result.Value).Length == 64);
+            Assert.That(result.Value, Is.EqualTo(value));
             Assert.That(result.Hash, Is.EqualTo(hash));
-        }
-
-        [Test]
-        public void When_generating_a_new_token_it_should_not_match_an_old_token()
-        {
-            var result1 = ClassUnderTest.Generate();
-            var result2 = ClassUnderTest.Generate();
-
-            Assert.That(result1.Value, Is.Not.EqualTo(result2.Value));
         }
 
         [Test]
