@@ -1,9 +1,9 @@
 ﻿using System;
+using EL.Crypto.Generators;
 using EL.Crypto.Hashing;
-using EL.Crypto.Tokens;
 using NUnit.Framework;
 
-namespace EL.Crypto.UnitTests.Tokens
+namespace EL.Crypto.UnitTests.Generators
 {
     public class TokenGeneratorTests : With_an_automocked<TokenGenerator>
     {

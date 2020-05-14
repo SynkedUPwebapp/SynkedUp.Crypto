@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using EL.Crypto.Hashing;
 
-namespace EL.Crypto.Tokens
+namespace EL.Crypto.Generators
 {
     public class TokenGenerator : ITokenGenerator
     {

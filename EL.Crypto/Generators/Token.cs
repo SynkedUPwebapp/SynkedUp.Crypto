@@ -1,4 +1,4 @@
-﻿namespace EL.Crypto.Tokens
+﻿namespace EL.Crypto.Generators
 {
     public class Token
     {
