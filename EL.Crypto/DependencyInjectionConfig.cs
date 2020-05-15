@@ -9,6 +9,7 @@ namespace EL.Crypto
         public static void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IByteGenerator, ByteGenerator>();
+            services.AddTransient<IRandomStringGenerator, RandomStringGenerator>();
             services.AddTransient<ITokenGenerator, TokenGenerator>();
             services.AddTransient<IHasher, Sha256Hasher>();
         }
