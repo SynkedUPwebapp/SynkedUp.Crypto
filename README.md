@@ -1,20 +1,15 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# EL.Crypto
+A library with some helpful cryptographic functionality.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Usage
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+To configure DI, call `EL.Crypto.DependencyInjectionConfig.ConfigureServices(services);`
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Here are the interfaces defining the available functionality:
+* `IAesEncryption` - Simple AES 256 encryption/decryption
+* `IByteGenerator` - Get cryptographically secure random byte arrays
+* `IRandomStringGenerator` - Get a random string from a provided character set
+* `ITokenGenerator` - Get a new 512 bit random opaque token along with it's hash.
+  Suitable for use as an API Key. 
+* `IHasher` - Hash string data.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
