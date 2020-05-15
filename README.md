@@ -11,5 +11,5 @@ Here are the interfaces defining the available functionality:
 * `IRandomStringGenerator` - Get a random string from a provided character set
 * `ITokenGenerator` - Get a new 512 bit random opaque token along with it's hash.
   Suitable for use as an API Key. 
-* `IHasher` - Hash string data.
+* `IHasher` - Hash string data. Defaults to the `Sha256Hasher` implementation.
 
