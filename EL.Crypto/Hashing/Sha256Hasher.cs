@@ -4,7 +4,12 @@ using System.Text;
 
 namespace EL.Crypto.Hashing
 {
-    public class Sha256Hasher : IHasher
+    public interface ISha256Hasher : IHasher
+    {
+
+    }
+
+    public class Sha256Hasher : ISha256Hasher
     {
         public string Hash(string input)
         {
