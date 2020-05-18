@@ -3,6 +3,12 @@ using System.Security.Cryptography;
 
 namespace EL.Crypto.Generators
 {
+    public interface IByteGenerator
+    {
+        byte[] Generate(int numberOfBytes);
+        string GenerateAsBase64(int numberOfBytes);
+    }
+    
     public class ByteGenerator : IByteGenerator
     {
         private static readonly RNGCryptoServiceProvider byteGenerator = new RNGCryptoServiceProvider();

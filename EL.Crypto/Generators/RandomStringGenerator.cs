@@ -3,6 +3,12 @@ using System.Linq;
 
 namespace EL.Crypto.Generators
 {
+    public interface IRandomStringGenerator
+    {
+        string Generate(int length);
+        string Generate(int length, string characterSet);
+    }
+
     public class RandomStringGenerator : IRandomStringGenerator
     {
         public const string DefaultCharacterSet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
