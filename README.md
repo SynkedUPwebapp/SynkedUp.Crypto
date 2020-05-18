@@ -9,7 +9,8 @@ Here are the interfaces defining the available functionality:
 * `IAesEncryption` - Simple AES 256 encryption/decryption
 * `IByteGenerator` - Get cryptographically secure random byte arrays
 * `IRandomStringGenerator` - Get a random string from a provided character set
-* `ITokenGenerator` - Get a new 512 bit random opaque token along with it's hash.
-  Suitable for use as an API Key. 
+* `ITokenGenerator` - Get a new 512 bit random opaque token along with its hash.
+  Suitable for use as an API Key. When using, store the hash rather than the token
+  and call the `Regenerate` function to recreate the hash when verifying a token.
 * `IHasher` - Hash string data. Defaults to the `Sha256Hasher` implementation.
 
