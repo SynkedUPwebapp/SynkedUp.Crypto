@@ -1,4 +1,5 @@
 ﻿using EL.Crypto.Hashing;
+using EL.Testing;
 using NUnit.Framework;
 
 namespace EL.Crypto.UnitTests.Hashing

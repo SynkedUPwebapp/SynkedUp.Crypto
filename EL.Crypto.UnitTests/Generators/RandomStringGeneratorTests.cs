@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using EL.Crypto.Generators;
+using EL.Testing;
 using NUnit.Framework;
 
 namespace EL.Crypto.UnitTests.Generators

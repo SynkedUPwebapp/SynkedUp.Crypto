@@ -1,5 +1,6 @@
 ﻿using EL.Crypto.Generators;
 using EL.Crypto.Hashing;
+using EL.Testing;
 using NUnit.Framework;
 
 namespace EL.Crypto.UnitTests.Generators
