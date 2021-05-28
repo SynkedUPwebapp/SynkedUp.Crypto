@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>Emmersion</Company>
+    <Description>A library with some helpful cryptographic functionality.</Description>
+    <Copyright>Copyright (c) 2021 Emmersion</Copyright>
+    <PackageLicenseUrl>https://github.com/emmersion/Emmersion.Crypto/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/emmersion/Emmersion.Crypto</PackageProjectUrl>
+    <PackageTags>cryptography</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
