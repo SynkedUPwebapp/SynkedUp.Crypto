@@ -1,6 +1,9 @@
 # Emmersion.Crypto
 A library with some helpful cryptographic functionality.
 
+This has been [open sourced](https://github.com/emmersion/engineering-at-emmersion#open-source)
+under the [MIT License](./LICENSE).
+
 ## Usage
 
 To configure DI, call `Emmersion.Crypto.DependencyInjectionConfig.ConfigureServices(services);`
