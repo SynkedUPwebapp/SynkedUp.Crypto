@@ -1,9 +1,9 @@
-# EL.Crypto
+# Emmersion.Crypto
 A library with some helpful cryptographic functionality.
 
 ## Usage
 
-To configure DI, call `EL.Crypto.DependencyInjectionConfig.ConfigureServices(services);`
+To configure DI, call `Emmersion.Crypto.DependencyInjectionConfig.ConfigureServices(services);`
 
 Here are the interfaces defining the available functionality:
 * `IAesEncryption` - Simple AES 256 encryption/decryption
@@ -14,3 +14,6 @@ Here are the interfaces defining the available functionality:
   and call the `Regenerate` function to recreate the hash when verifying a token.
 * `IHasher` - Hash string data. Defaults to the `Sha256Hasher` implementation.
 
+## Version History
+- 2.0 - Change namespace from `EL.` to `Emmersion.`
+- 1.0 - Initial release
