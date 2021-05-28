@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EL.Crypto\EL.Crypto.csproj" />
+    <ProjectReference Include="..\Emmersion.Crypto\Emmersion.Crypto.csproj" />
   </ItemGroup>
 
 </Project>

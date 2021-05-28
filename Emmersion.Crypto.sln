@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EL.Crypto", "EL.Crypto\EL.Crypto.csproj", "{228E7CF9-3B5D-4FAA-952A-898D4CB80010}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emmersion.Crypto", "Emmersion.Crypto\Emmersion.Crypto.csproj", "{228E7CF9-3B5D-4FAA-952A-898D4CB80010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EL.Crypto.UnitTests", "EL.Crypto.UnitTests\EL.Crypto.UnitTests.csproj", "{55FE3896-BDF7-4785-A5C7-16E324509D91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emmersion.Crypto.UnitTests", "Emmersion.Crypto.UnitTests\Emmersion.Crypto.UnitTests.csproj", "{55FE3896-BDF7-4785-A5C7-16E324509D91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

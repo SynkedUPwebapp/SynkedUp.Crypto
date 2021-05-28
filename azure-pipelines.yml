@@ -49,7 +49,7 @@ steps:
     displayName: 'Pack'
     inputs:
       command: 'pack'
-      packagesToPack: '**/EL.Crypto.csproj'
+      packagesToPack: '**/Emmersion.Crypto.csproj'
       versioningScheme: 'byBuildNumber'
 
   - task: NuGetCommand@2
