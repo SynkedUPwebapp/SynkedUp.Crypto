@@ -1,4 +1,4 @@
-﻿namespace EL.Crypto.Hashing
+﻿namespace Emmersion.Crypto.Hashing
 {
     public interface IHasher
     {

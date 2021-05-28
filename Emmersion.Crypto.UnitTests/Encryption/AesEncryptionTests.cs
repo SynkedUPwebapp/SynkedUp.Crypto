@@ -1,10 +1,10 @@
 ﻿using System;
-using EL.Crypto.Encryption;
-using EL.Crypto.Generators;
 using EL.Testing;
+using Emmersion.Crypto.Encryption;
+using Emmersion.Crypto.Generators;
 using NUnit.Framework;
 
-namespace EL.Crypto.UnitTests.Encryption
+namespace Emmersion.Crypto.UnitTests.Encryption
 {
     public class AesEncryptionTests : With_an_automocked<AesEncryption>
     {

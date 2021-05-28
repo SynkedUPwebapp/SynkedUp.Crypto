@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using EL.Crypto.Generators;
 using EL.Testing;
+using Emmersion.Crypto.Generators;
 using NUnit.Framework;
 
-namespace EL.Crypto.UnitTests.Generators
+namespace Emmersion.Crypto.UnitTests.Generators
 {
     public class RandomStringGeneratorTests : With_an_automocked<RandomStringGenerator>
     {

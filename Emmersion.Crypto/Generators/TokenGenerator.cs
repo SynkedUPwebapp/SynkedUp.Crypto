@@ -1,6 +1,6 @@
-﻿using EL.Crypto.Hashing;
+﻿using Emmersion.Crypto.Hashing;
 
-namespace EL.Crypto.Generators
+namespace Emmersion.Crypto.Generators
 {
     public interface ITokenGenerator
     {

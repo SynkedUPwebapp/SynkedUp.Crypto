@@ -1,9 +1,9 @@
-﻿using EL.Crypto.Encryption;
-using EL.Crypto.Generators;
-using EL.Crypto.Hashing;
+﻿using Emmersion.Crypto.Encryption;
+using Emmersion.Crypto.Generators;
+using Emmersion.Crypto.Hashing;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EL.Crypto
+namespace Emmersion.Crypto
 {
     public class DependencyInjectionConfig
     {

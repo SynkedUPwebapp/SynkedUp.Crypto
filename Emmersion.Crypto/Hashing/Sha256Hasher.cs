@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace EL.Crypto.Hashing
+namespace Emmersion.Crypto.Hashing
 {
     public interface ISha256Hasher : IHasher
     {

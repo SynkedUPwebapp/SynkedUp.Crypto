@@ -1,4 +1,4 @@
-﻿namespace EL.Crypto.Generators
+﻿namespace Emmersion.Crypto.Generators
 {
     public class Token
     {

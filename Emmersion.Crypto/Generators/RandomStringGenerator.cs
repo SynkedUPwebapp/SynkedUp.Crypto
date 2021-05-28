@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace EL.Crypto.Generators
+namespace Emmersion.Crypto.Generators
 {
     public interface IRandomStringGenerator
     {

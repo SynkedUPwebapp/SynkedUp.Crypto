@@ -1,9 +1,9 @@
-﻿using EL.Crypto.Generators;
-using EL.Crypto.Hashing;
-using EL.Testing;
+﻿using EL.Testing;
+using Emmersion.Crypto.Generators;
+using Emmersion.Crypto.Hashing;
 using NUnit.Framework;
 
-namespace EL.Crypto.UnitTests.Generators
+namespace Emmersion.Crypto.UnitTests.Generators
 {
     public class TokenGeneratorTests : With_an_automocked<TokenGenerator>
     {

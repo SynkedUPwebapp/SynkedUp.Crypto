@@ -1,4 +1,4 @@
-﻿namespace EL.Crypto.Encryption
+﻿namespace Emmersion.Crypto.Encryption
 {
     public interface IAesEncryption
     {

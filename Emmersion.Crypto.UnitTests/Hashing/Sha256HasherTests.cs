@@ -1,8 +1,8 @@
-﻿using EL.Crypto.Hashing;
-using EL.Testing;
+﻿using EL.Testing;
+using Emmersion.Crypto.Hashing;
 using NUnit.Framework;
 
-namespace EL.Crypto.UnitTests.Hashing
+namespace Emmersion.Crypto.UnitTests.Hashing
 {
     public class Sha256HasherTests : With_an_automocked<Sha256Hasher>
     {

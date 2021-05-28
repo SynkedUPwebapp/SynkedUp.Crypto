@@ -1,8 +1,8 @@
 ﻿using System.IO;
 using System.Security.Cryptography;
-using EL.Crypto.Generators;
+using Emmersion.Crypto.Generators;
 
-namespace EL.Crypto.Encryption
+namespace Emmersion.Crypto.Encryption
 {
     public class AesEncryption : IAesEncryption
     {
