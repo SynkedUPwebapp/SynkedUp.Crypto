@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using EL.Testing;
+using Emmersion.Testing;
 using Emmersion.Crypto.Generators;
 using NUnit.Framework;
 

@@ -1,5 +1,5 @@
 ﻿using System;
-using EL.Testing;
+using Emmersion.Testing;
 using Emmersion.Crypto.Encryption;
 using Emmersion.Crypto.Generators;
 using NUnit.Framework;
