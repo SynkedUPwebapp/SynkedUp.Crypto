@@ -20,16 +20,12 @@ variables:
     value: 'Any CPU'
   - name: 'buildConfiguration'
     value: 'Release'
+  - group: 'NuGetPublishing'
 
-name: 1.1$(Rev:.r)
+name: 2.0$(Rev:.r)
 
 steps:
   - task: NuGetToolInstaller@1
-
-  - task: UseDotNet@2
-    inputs:
-      packageType: 'sdk'
-      version: '3.1.x'
 
   - task: NuGetCommand@2
     displayName: 'Restore from Nuget.org and EmmersionLearning feeds'
@@ -53,9 +49,19 @@ steps:
       versioningScheme: 'byBuildNumber'
 
   - task: NuGetCommand@2
-    displayName: 'Publish'
+    displayName: 'Publish to internal feed'
     inputs:
       command: 'push'
       packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
       nuGetFeedType: 'internal'
       publishVstsFeed: '2ee1cde5-9787-4e91-b498-e30a43c5d914'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Publish to nuget.org'
+    inputs:
+      command: custom
+      custom: nuget
+      arguments: >
+        push $(Build.ArtifactStagingDirectory)/**/*.nupkg
+        -s https://api.nuget.org/v3/index.json
+        -k $(NuGetPublishingApiKey)
