@@ -22,7 +22,7 @@ variables:
     value: 'Release'
   - group: 'NuGetPublishing'
 
-name: 2.0$(Rev:.r)
+name: 2.1$(Rev:.r)
 
 steps:
   - task: NuGetToolInstaller@1

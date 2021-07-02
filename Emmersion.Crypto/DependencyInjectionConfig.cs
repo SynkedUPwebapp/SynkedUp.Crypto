@@ -15,6 +15,7 @@ namespace Emmersion.Crypto
             services.AddTransient<ITokenGenerator, TokenGenerator>();
             services.AddTransient<IHasher, Sha256Hasher>();
             services.AddTransient<ISha256Hasher, Sha256Hasher>();
+            services.AddTransient<IHmacSha256, HmacSha256>();
         }
     }
 }

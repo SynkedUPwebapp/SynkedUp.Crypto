@@ -16,7 +16,9 @@ Here are the interfaces defining the available functionality:
   Suitable for use as an API Key. When using, store the hash rather than the token
   and call the `Regenerate` function to recreate the hash when verifying a token.
 * `IHasher` - Hash string data. Defaults to the `Sha256Hasher` implementation.
+* `IHmacSha256` - Generate an HMAC using the HMAC-SHA256 algorithm.
 
 ## Version History
-- 2.0 - Change namespace from `EL.` to `Emmersion.`
-- 1.0 - Initial release
+* 2.1 - Added `IHmacSha256`
+* 2.0 - Change namespace from `EL.` to `Emmersion.`
+* 1.0 - Initial release
