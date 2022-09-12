@@ -25,9 +25,14 @@ variables:
 name: 2.1$(Rev:.r)
 
 steps:
+  - task: UseDotNet@2
+    inputs:
+      packageType: 'sdk'
+      version: '6.0.x'
+      
   - task: NuGetToolInstaller@1
 
-  - task: NuGetCommand@2
+  - task: DotNetCoreCLI@2
     displayName: 'Restore from Nuget.org and EmmersionLearning feeds'
     inputs:
       command: 'restore'
